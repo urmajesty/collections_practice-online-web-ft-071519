@@ -8,6 +8,7 @@ def sort_array_desc(integers)
     b <=> a
   end
 end
+<<<<<<< HEAD
 
 def sort_array_char_count(string)
 string.sort do |a, b|
@@ -65,4 +66,50 @@ def add_s(array)
    item
  end
  end
+=======
+>>>>>>> 6657e6c63eb2c15df6cf66fc2c2c41ea3161ec9b
 
+def sort_array_char_count(string)
+string.sort do |a, b|
+  a.size <=> b.size
+  end
+end
+
+def swap_elements(array)
+  array[1],array[2] = array[2],array[1]
+array
+end
+
+
+def swap_elements_from_to(array, index, destination_index)
+  array[index], array[destination_index] = array[destination_index], array[index]
+  return array
+end
+
+def reverse_array(integers)
+ return integers.reverse!
+
+end
+
+def kesha_maker(array)
+  changes = []
+  i = 0
+array.each do |dollar|
+    dollar[2] = "$"
+    changes << array[i]
+    i += 1
+  end
+ 
+end
+
+def find_a(strings)
+  a_words = []
+  strings.collect do |words|
+    if words.start_with?("a")
+      a_words << words
+  end
+end
+a_words
+
+def sum_array
+end
